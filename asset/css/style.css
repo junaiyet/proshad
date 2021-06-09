@@ -1,0 +1,353 @@
+/*
+
+Template name prosad HTML5
+Template URK:http://.www. prosad.com
+
+Aothor name: md shahin sir
+Author URL:.......
+Version
+
+==========Template content for Index=========
+
+
+
+1. boday basic pramiter
+2.header aria design
+3.banner-part
+*/
+/*==========1 boday basic pramiter=========*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all linear 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  transition: all linear 0.3s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #7777;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/*==========2.header aria design=========*/
+.header-top-aria {
+  background: #ec3323;
+  padding: 8px 0;
+}
+.header-top-aria .header-top-welcome p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+.header-top-aria .header-top-contact ul {
+  text-align: center;
+}
+.header-top-aria .header-top-contact ul li {
+  display: inline-block;
+  margin: 7;
+}
+.header-top-aria .header-top-contact ul li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+.header-top-aria .header-top-contact ul li a i {
+  margin-right: 10px;
+}
+.header-top-aria .header-top-socal ul {
+  text-align: center;
+}
+.header-top-aria .header-top-socal ul li {
+  display: inline-block;
+}
+.header-top-aria .header-top-socal ul li a {
+  display: block;
+  color: #fff;
+}
+.header-top-aria .header-top-socal ul li a:hover {
+  text-decoration: none;
+  transition: all linear 0.3s;
+  color: #000;
+}
+.header-top-aria .header-top-login-signup ul {
+  text-align: center;
+}
+.header-top-aria .header-top-login-signup ul li {
+  display: inline-block;
+  margin: 7;
+  color: #fff;
+}
+.header-top-aria .header-top-login-signup ul li:last-child a::after {
+  display: none;
+}
+.header-top-aria .header-top-login-signup ul li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  margin-right: 10px;
+}
+.header-top-aria .header-top-login-signup ul li a::after {
+  position: absolute;
+  content: "";
+  right: -7px;
+  top: 8px;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+}
+.header-top-aria .header-top-login-signup ul li a:hover {
+  text-decoration: none;
+  transition: all linear 0.3s;
+  color: #000;
+}
+
+.header-aria {
+  background: transparent;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+.header-aria .round-shap {
+  background: #ffffff;
+  position: relative;
+}
+.header-aria .round-shap::after {
+  position: absolute;
+  left: -103px;
+  top: 0;
+  width: 103px;
+  height: 100%;
+  content: "";
+  background: #fff;
+  border-radius: 0 0 0 73px;
+}
+.header-aria .round-shap::before {
+  position: absolute;
+  right: -103px;
+  top: 0;
+  width: 103px;
+  height: 100%;
+  content: "";
+  background: #fff;
+  border-radius: 0 0 73px 0;
+}
+.header-aria .logo a img {
+  padding-top: 35px;
+}
+.header-aria .main-manu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.header-aria .main-manu ul li {
+  display: inline-block;
+  position: relative;
+  transition: all linear 0.3s;
+}
+.header-aria .main-manu ul li:hover {
+  background: #000;
+  transition: all linear 0.3s;
+}
+.header-aria .main-manu ul li:hover ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 101%;
+}
+.header-aria .main-manu ul li:hover a {
+  color: #fff;
+}
+.header-aria .main-manu ul li:hover a i {
+  color: #fff;
+}
+.header-aria .main-manu ul li ul.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  background: #000;
+  opacity: 0;
+  text-align: left;
+  transition: 1s;
+}
+.header-aria .main-manu ul li ul.sub-menu li {
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+.header-aria .main-manu ul li ul.sub-menu li a {
+  color: #fff;
+  padding: 10px;
+  transition: all linear 0.3s;
+}
+.header-aria .main-manu ul li ul.sub-menu li a:hover {
+  padding-left: 20px;
+  transition: all linear 0.3s;
+}
+.header-aria .main-manu ul li a {
+  color: #000;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  padding: 40px 15px;
+  display: inline-block;
+  transition: all linear 0.3s;
+}
+.header-aria .main-manu ul li a i {
+  color: #555;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.header-aria .submit-property {
+  margin-top: 30px;
+}
+.header-aria .submit-property a {
+  display: block;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+.header-aria .submit-property a:hover {
+  background: #000;
+}
+
+/*==========3.banner-part pramiter=========*/
+#banner-part .banner {
+  background: url(../images/banner2.png) no-repeat center;
+  background-size: cover;
+  padding: 440px 0 340px 0;
+  text-align: center;
+}
+#banner-part .banner h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 500;
+}
+#banner-part .banner p {
+  color: #fff;
+  padding: 40px 80px;
+}
+#banner-part .banner form {
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  height: 60px;
+  width: 725px;
+}
+#banner-part .banner form input {
+  font-size: 15px;
+  color: #808080;
+  border: none;
+  padding: 0 65px;
+  padding: 20px 115px 20px 65px;
+  margin-left: -27px;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#banner-part .banner form .icon {
+  position: absolute;
+  left: 285px;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
+  color: #ec3323;
+}
+#banner-part .banner form select {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #808080;
+}
+#banner-part .banner form .select1 {
+  text-align: center;
+  padding: 20px 0px 20px 40px;
+  background: transparent;
+  margin-right: 20px;
+  position: absolute;
+  height: 100%;
+  left: 46.8%;
+  top: 0;
+  border: 0;
+}
+#banner-part .banner form .select2 {
+  text-align: center;
+  padding: 20px 0px 20px 40px;
+  background: transparent;
+  margin-right: 20px;
+  position: absolute;
+  height: 100%;
+  left: 65%;
+  top: 0;
+  border: 0;
+}
+#banner-part .banner form button {
+  padding: 20px 38px;
+  background: #ec3323;
+  border: 0;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+#banner-part .left-arrow {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 30px;
+  font-size: 40px;
+  background: #002172;
+  color: #fff;
+  z-index: 999;
+  transition: all linear 0.3s;
+}
+#banner-part .left-arrow:hover {
+  background: #ec3323;
+}
+#banner-part .right-arrow {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 30px;
+  font-size: 40px;
+  background: #ec3323;
+  color: #fff;
+  z-index: 999;
+}

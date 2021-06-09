@@ -1,0 +1,459 @@
+/*
+
+Template name prosad HTML5
+Template URK:http://.www. prosad.com
+
+Aothor name: md shahin sir
+Author URL:.......
+Version
+
+==========Template content for Index=========
+
+
+
+1. boday basic pramiter
+2.header aria design
+3.banner-part
+*/
+/*==========1 boday basic pramiter=========*/
+$body-font: 'Roboto',
+sans-serif;
+$title-font: 'Rubik',
+sans-serif;
+
+
+$prymari-color:#ec3323;
+$secondery-color:#002172;
+$normal-color: #fff;
+$transition: all linear.3s;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+        text-decoration: none;
+        transition: $transition;
+    }
+}
+
+body {
+    font-family: $body-font;
+    color: #7777;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*==========2.header aria design=========*/
+.header-top-aria {
+    background: $prymari-color;
+    padding: 8px 0;
+
+    .header-top-welcome {
+        p {
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+        }
+    }
+
+    .header-top-contact {
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin: 7;
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                    color: #fff;
+
+                    i {
+                        margin-right: 10px;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .header-top-socal {
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+
+                a {
+                    display: block;
+                    color: #fff;
+
+                    &:hover {
+                        text-decoration: none;
+                        transition: $transition;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-top-login-signup {
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin: 7;
+                color: #fff;
+
+                &:last-child {
+                    a {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                    color: #fff;
+                    position: relative;
+                    margin-right: 10px;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        right: -7px;
+                        top: 8px;
+                        width: 2px;
+                        height: 12px;
+                        background: #fff;
+
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        transition: $transition;
+                        color: #000;
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+
+}
+
+.header-aria {
+    background: transparent;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+
+    .round-shap {
+        background: #ffffff;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: -103px;
+            top: 0;
+            width: 103px;
+            height: 100%;
+            content: "";
+            background: #fff;
+            border-radius: 0 0 0 73px;
+
+        }
+
+        &::before {
+            position: absolute;
+            right: -103px;
+            top: 0;
+            width: 103px;
+            height: 100%;
+            content: "";
+            background: #fff;
+            border-radius: 0 0 73px 0;
+
+        }
+
+    }
+
+    .logo {
+        a {
+            img {
+                padding-top: 35px;
+            }
+        }
+    }
+
+    .main-manu {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+
+            li {
+                display: inline-block;
+                position: relative;
+                transition: $transition;
+
+                &:hover {
+                    background: #000;
+                    transition: $transition;
+
+                    ul.sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 101%;
+
+                    }
+
+                    a {
+                        color: #fff;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                ul.sub-menu {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 150px;
+                    background: #000;
+                    opacity: 0;
+                    text-align: left;
+                    transition: 1s;
+
+                    li {
+                        display: block;
+                        border-bottom: 1px solid #ddd;
+
+                        a {
+                            color: #fff;
+                            padding: 10px;
+                            transition: $transition;
+
+                            &:hover {
+                                padding-left: 20px;
+                                transition: $transition;
+
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    color: #000;
+                    font-weight: 500;
+                    font-family: $title-font;
+                    font-size: 16px;
+                    padding: 40px 15px;
+                    display: inline-block;
+                    transition: $transition;
+
+                    i {
+                        color: #555;
+                        font-size: 16px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .submit-property {
+        margin-top: 30px;
+
+        a {
+            display: block;
+            padding: 10px;
+            background: #000;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-align: center;
+            transition: $transition;
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+
+
+/*==========3.banner-part pramiter=========*/
+#banner-part {
+    .banner {
+        background: url(../images/banner2.png) no-repeat center;
+        background-size: cover;
+        padding: 440px 0 340px 0;
+
+        text-align: center;
+
+        h2 {
+            font-family: $title-font;
+            font-size: 48px;
+            color: $normal-color;
+            line-height: 32px;
+            font-weight: 500;
+        }
+
+        p {
+            color: $normal-color;
+
+
+            padding: 40px 80px;
+
+        }
+
+        form {
+
+
+            background: $normal-color;
+            margin: 0 auto;
+            // text-align: left;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            position: relative;
+            height: 60px;
+            width: 725px;
+
+            input {
+                font-size: 15px;
+                color: #808080;
+                border: none;
+                padding: 0 65px;
+                padding: 20px 115px 20px 65px;
+                margin-left: -27px;
+                position: absolute;
+                height: 100%;
+                left: 0;
+                top: 0;
+
+            }
+
+            .icon {
+                position: absolute;
+                left: 285px;
+                top: 50%;
+                font-size: 20px;
+                transform: translateY(-50%);
+                color: $prymari-color;
+            }
+            select{
+                font-family: $body-font;
+                font-size: 15px;
+                color: #808080;
+            }
+            .select1 {
+                text-align: center;
+                padding: 20px 0px 20px 40px;
+
+
+
+                background: transparent;
+                margin-right: 20px;
+                position: absolute;
+                height: 100%;
+                left: 46.8%;
+                top: 0;
+                border: 0;
+            }
+
+            .select2 {
+                text-align: center;
+                padding: 20px 0px 20px 40px;
+
+                background: transparent;
+
+                margin-right: 20px;
+                position: absolute;
+                height: 100%;
+                left: 65%;
+                top: 0;
+                border: 0;
+           
+            }
+
+            button {
+                padding: 20px 38px;
+                background: $prymari-color;
+                border: 0;
+                text-align: center;
+                height: 100%;
+                position: absolute;
+                right: 0px;
+                top: 0;
+            }
+        }
+    }
+    .left-arrow{
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px 30px;
+        font-size: 40px;
+        background: $secondery-color;
+        color: $normal-color;
+        z-index: 999;
+        transition: $transition;
+        &:hover{
+            background: $prymari-color;
+        }
+    }
+    .right-arrow{
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px 30px;
+        font-size: 40px;
+        background: $prymari-color;
+        color: $normal-color;
+        z-index: 999;
+    }
+}
