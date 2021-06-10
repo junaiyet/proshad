@@ -13,10 +13,16 @@ Version
 
 1. boday basic pramiter
 2.header aria design
-3.banner-part
-4.about-part
-5.Properties-part
-6.citys-part
+3.banner-part design
+4.about-part design
+5.Properties-part design
+6.citys-part design
+7.company-part design
+8.client-part design
+9. agent-part design
+10.blog-part design
+11.footer design
+12.backtotop design
 */
 /*==========1 boday basic pramiter=========*/
 * {
@@ -56,6 +62,21 @@ body {
   color: #7777;
   font-size: 16px;
   line-height: 26px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.title h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+}
+.title p {
+  padding: 0 425px;
 }
 
 /*==========2.header aria design=========*/
@@ -243,10 +264,10 @@ body {
   transition: all linear 0.3s;
 }
 .header-aria .submit-property a:hover {
-  background: #000;
+  background: #ec3323;
 }
 
-/*==========3.banner-part pramiter=========*/
+/*==========3.banner-part  design=========*/
 #banner-part .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.png) no-repeat center;
   background-size: cover;
@@ -349,7 +370,7 @@ body {
   z-index: 999;
 }
 
-/*==========4.about-part pramiter=========*/
+/*==========4.about-part design=========*/
 #about-part {
   margin-top: 100px;
 }
@@ -385,9 +406,13 @@ body {
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+#about-part .details .btn a:hover {
+  background: #002172;
 }
 
-/*==========5.Properties-part =========*/
+/*==========5.Properties-part design=========*/
 #Properties-part {
   background: #e5edff;
   margin-top: 100px;
@@ -471,8 +496,8 @@ body {
 #Properties-part .prev {
   position: absolute;
   right: 115px;
-  top: -66px;
-  padding: 10px 16px;
+  top: -90px;
+  padding: 7px 14px;
   border: 3px dotted #c2cadd;
   background: transparent;
   color: #002172;
@@ -486,8 +511,8 @@ body {
 #Properties-part .next {
   position: absolute;
   right: 35px;
-  top: -66px;
-  padding: 10px 16px;
+  top: -90px;
+  padding: 7px 14px;
   border: 3px dotted #c2cadd;
   background: transparent;
   color: #ec3323;
@@ -495,23 +520,9 @@ body {
   font-size: 29px;
 }
 
-/*==========6.citys-part =========*/
+/*==========6.citys-part design=========*/
 #citys-part {
   margin-top: 100px;
-}
-#citys-part .city-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-#citys-part .city-title h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #000;
-}
-#citys-part .city-title p {
-  margin-top: 20px;
-  padding: 0 420px;
 }
 #citys-part .item-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner.png) no-repeat center;
@@ -521,11 +532,15 @@ body {
   text-align: center;
 }
 #citys-part .item-banner .deitels {
-  background: #ec3323;
+  background: #002172;
   display: inline-block;
   width: 250px;
   height: 120px;
   color: #fff;
+  transition: all linear 0.3s;
+}
+#citys-part .item-banner .deitels:hover {
+  background: #ec3323;
 }
 #citys-part .item-banner .deitels h1 {
   font-family: "Rubik", sans-serif;
@@ -541,20 +556,11 @@ body {
 #citys-part .banner-tow {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-two.png) no-repeat center;
 }
-#citys-part .banner-tow .deitels {
-  background: #002172;
-}
 #citys-part .banner-three {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-three.png) no-repeat center;
 }
-#citys-part .banner-three .deitels {
-  background: #002172;
-}
 #citys-part .banner-four {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-four.png) no-repeat center;
-}
-#citys-part .banner-four .deitels {
-  background: #002172;
 }
 #citys-part .button {
   text-align: center;
@@ -568,4 +574,437 @@ body {
   color: #fff;
   background: #ec3323;
   margin-top: 30px;
+  transition: all linear 0.3s;
+}
+#citys-part .button a:hover {
+  background: #002172;
+}
+
+/*==========7.company-part design=========*/
+#company-part {
+  margin-top: 100px;
+}
+#company-part .company-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/company-banner.png);
+  padding: 160px 0;
+  text-align: center;
+}
+#company-part .company-banner p {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#company-part .company-banner h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+#company-part .company-banner ul li {
+  margin-top: 50px;
+  margin-left: 10px;
+  display: inline-block;
+}
+#company-part .company-banner ul li a {
+  background: #002172;
+  padding: 18px 23px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all linear 0.3s;
+}
+#company-part .company-banner ul li a:hover {
+  background: #ec3323;
+}
+
+/*==========8. client-part design=========*/
+#client-part {
+  margin-top: 100px;
+}
+#client-part .client-title {
+  margin-bottom: 50px;
+}
+#client-part .client-title h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+#client-part .client-title p {
+  padding-right: 602px;
+}
+#client-part .item {
+  text-align: center;
+}
+#client-part .item .img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+}
+#client-part .item .img::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 84px;
+  background: #ec3323;
+  content: "";
+}
+#client-part .item .img::before {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 75px;
+  height: 7px;
+  background: #ec3323;
+  content: "";
+}
+#client-part .item h3 {
+  font-family: "Rubik", sans-serif;
+  font-family: 500;
+  font-size: 24px;
+  margin-top: 43px;
+  color: #000;
+}
+#client-part .item h6 {
+  margin-top: 9px;
+  color: #002172;
+  font-weight: 400;
+  font-size: 14px;
+}
+#client-part .item p {
+  margin-top: 25px;
+  padding: 0 45px;
+}
+#client-part .prev {
+  position: absolute;
+  right: 115px;
+  top: -100px;
+  padding: 7px 14px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #002172;
+  z-index: 99;
+  font-size: 29px;
+  transition: all linear 0.3s;
+}
+#client-part .prev:hover {
+  color: #ec3323;
+}
+#client-part .next {
+  position: absolute;
+  right: 35px;
+  top: -100px;
+  padding: 7px 14px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #ec3323;
+  z-index: 99;
+  font-size: 29px;
+}
+
+/*==========9. agent--part design=========*/
+#agent-part {
+  margin-top: 100px;
+  background: url(../images/agent-banner.png) no-repeat center;
+  background-size: cover;
+  padding: 100px 0;
+}
+#agent-part .title {
+  color: #fff;
+}
+#agent-part .title h2 {
+  color: #fff;
+}
+#agent-part .item .img img {
+  width: 100%;
+}
+#agent-part .item .text {
+  width: 235px;
+  border: 1px solid #263980;
+  background: transparent;
+  margin: 0 auto;
+  border-top: 0;
+  padding-left: 20px;
+}
+#agent-part .item .text h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+#agent-part .item .text p {
+  font-size: 14px;
+  color: #fff;
+}
+#agent-part .item .text .icon ul li {
+  display: inline-block;
+}
+#agent-part .item .text .icon ul li a {
+  display: inline-block;
+}
+#agent-part .item .text .icon ul li a i {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 15px;
+  padding-bottom: 20px;
+  transition: all linear 0.3s;
+}
+#agent-part .item .text .icon ul li a i:hover {
+  color: #ec3323;
+}
+
+/*==========10.blog-part design=========*/
+#blog-part {
+  margin-top: 100px;
+}
+#blog-part .item {
+  margin: 0 15px;
+}
+#blog-part .item .img img {
+  width: 100%;
+}
+#blog-part .item .text {
+  width: 320px;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  transform: translateY(-40%);
+}
+#blog-part .item .text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #002172;
+  font-size: 14px;
+  padding-top: 42px;
+}
+#blog-part .item .text h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #000;
+  padding: 20px 45px 25px;
+}
+#blog-part .item .text a {
+  display: inline-block;
+  color: #ec3323;
+  padding-bottom: 42px;
+}
+#blog-part .slick-center .text {
+  border: 3px solid #ec3323;
+}
+#blog-part .prev {
+  position: absolute;
+  left: -70px;
+  top: 34%;
+  transform: translateY(-50%);
+  padding: 7px 14px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #002172;
+  z-index: 99;
+  font-size: 29px;
+  transition: all linear 0.3s;
+}
+#blog-part .prev:hover {
+  color: #ec3323;
+}
+#blog-part .next {
+  position: absolute;
+  right: -70px;
+  top: 34%;
+  transform: translateY(-50%);
+  padding: 7px 14px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #ec3323;
+  z-index: 99;
+  font-size: 29px;
+}
+
+/*==========11.footer-part design=========*/
+footer {
+  background: url(../images/footer-banner.png) no-repeat center;
+  background-size: cover;
+}
+footer .footer-top {
+  width: 60%;
+  margin: 0 auto;
+  background: transparent;
+  border-bottom-left-radius: 62px;
+  border-bottom-right-radius: 62px;
+  border: 1px solid #464b8c;
+  display: flex;
+  padding: 25px 0;
+}
+footer .footer-top h3 {
+  margin-left: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 23px;
+}
+footer .footer-top form {
+  display: inline-block;
+  position: relative;
+}
+footer .footer-top form .mail {
+  margin-left: 50px;
+}
+footer .footer-top form .mail input {
+  border: 1px solid #464b8c;
+  background: transparent;
+  padding: 24px 160px 24px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+footer .footer-top form .button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+footer .footer-top form .button button {
+  border: 0;
+  background: #ec3323;
+  padding: 25px 24px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase\;;
+}
+footer .footer-main-aria {
+  padding-top: 100px;
+}
+footer .footer-main-aria h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer .footer-main-aria ul li {
+  margin-bottom: 7px;
+}
+footer .footer-main-aria ul li a {
+  color: #fff;
+  transition: all linear 0.3s;
+}
+footer .footer-main-aria ul li a i {
+  margin-right: 8px;
+  color: #ec3323;
+}
+footer .footer-main-aria ul li a:hover {
+  color: #ec3323;
+}
+footer .footer-main-aria .logo p {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+footer .footer-main-aria .logo h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background: #ec3323;
+  padding-left: 27px;
+  padding: 15px 40px 15px 27px;
+  display: inline-block;
+  margin-bottom: 100px;
+  transition: all linear 0.3s;
+}
+footer .footer-main-aria .logo h3 a {
+  display: inline-block;
+  color: #fff;
+}
+footer .footer-main-aria .logo h3 i {
+  margin-right: 15px;
+  font-size: 22px;
+}
+footer .footer-main-aria .logo h3:hover {
+  background: #000;
+}
+footer .footer-main-aria .post .details {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .footer-main-aria .post .details .text {
+  margin-left: 30px;
+  color: #fff;
+}
+footer .footer-main-aria .post .details .text p {
+  font-size: 14px;
+  padding-right: 70px;
+  line-height: 24px;
+}
+footer .footer-main-aria .post .details .text h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+}
+footer .footer-botom-aria {
+  border-top: 1px solid #073094;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-botom-aria p {
+  display: inline-block;
+  padding: 36px 0 40px 0;
+}
+footer .footer-botom-aria p span {
+  color: #ec3323;
+}
+footer .footer-botom-aria ul {
+  margin-top: 30px;
+}
+footer .footer-botom-aria ul li {
+  display: inline-block;
+}
+footer .footer-botom-aria ul li a {
+  display: inline-block;
+}
+footer .footer-botom-aria ul li a i {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  border-top: 1px solid #073094;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 15px;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+footer .footer-botom-aria ul li a i:hover {
+  background: #ec3323;
+}
+
+/*=============12.backtotop===============*/
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.backtotop a {
+  display: inline-block;
+}
+.backtotop a i {
+  padding: 24px 11px 21px 11px;
+  background: #e73100;
+  color: #fff;
+  font-size: 20px;
 }

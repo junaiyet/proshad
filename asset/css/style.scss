@@ -13,10 +13,16 @@ Version
 
 1. boday basic pramiter
 2.header aria design
-3.banner-part
-4.about-part
-5.Properties-part
-6.citys-part
+3.banner-part design
+4.about-part design
+5.Properties-part design
+6.citys-part design
+7.company-part design
+8.client-part design
+9. agent-part design
+10.blog-part design
+11.footer design
+12.backtotop design
 */
 /*==========1 boday basic pramiter=========*/
 $body-font: 'Roboto',
@@ -69,6 +75,25 @@ body {
     color: #7777;
     font-size: 16px;
     line-height: 26px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+
+    h2 {
+        font-family: $title-font;
+        font-size: 36px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 25px;
+    }
+
+    p {
+        padding: 0 425px;
+    }
+
+
 }
 
 /*==========2.header aria design=========*/
@@ -318,15 +343,13 @@ body {
             transition: $transition;
 
             &:hover {
-                background: #000;
+                background: $prymari-color;
             }
         }
     }
 }
 
-
-
-/*==========3.banner-part pramiter=========*/
+/*==========3.banner-part  design=========*/
 #banner-part {
     .banner {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.png) no-repeat center;
@@ -460,14 +483,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-/*==========4.about-part pramiter=========*/
+/*==========4.about-part design=========*/
 
 #about-part {
     margin-top: 100px;
@@ -508,12 +524,17 @@ body {
                 font-weight: 500;
                 color: $normal-color;
                 text-transform: uppercase;
+                transition: $transition;
+
+                &:hover {
+                    background: $secondery-color;
+                }
             }
         }
     }
 }
 
-/*==========5.Properties-part =========*/
+/*==========5.Properties-part design=========*/
 #Properties-part {
     background: #e5edff;
     margin-top: 100px;
@@ -631,8 +652,8 @@ body {
     .prev {
         position: absolute;
         right: 115px;
-        top: -66px;
-        padding: 10px 16px;
+        top: -90px;
+        padding: 7px 14px;
         border: 3px dotted #c2cadd;
         background: transparent;
         color: $secondery-color;
@@ -648,8 +669,8 @@ body {
     .next {
         position: absolute;
         right: 35px;
-        top: -66px;
-        padding: 10px 16px;
+        top: -90px;
+        padding: 7px 14px;
         border: 3px dotted #c2cadd;
         background: transparent;
         color: $prymari-color;
@@ -658,24 +679,11 @@ body {
     }
 }
 
-/*==========6.citys-part =========*/
+/*==========6.citys-part design=========*/
 #citys-part {
     margin-top: 100px;
 
-    .city-title {
-        text-align: center;
-        margin-bottom: 50px;
-        h2{
-            font-family: $title-font;
-            font-size: 36px;
-            font-weight: 700;
-            color: #000;
-        }
-        p{
-            margin-top: 20px;
-            padding: 0 420px;
-        }
-    }
+
 
     .item-banner {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner.png) no-repeat center;
@@ -685,11 +693,16 @@ body {
         text-align: center;
 
         .deitels {
-            background: $prymari-color;
+            background: $secondery-color;
             display: inline-block;
             width: 250px;
             height: 120px;
             color: $normal-color;
+            transition: $transition;
+
+            &:hover {
+                background: $prymari-color;
+            }
 
             h1 {
                 font-family: $title-font;
@@ -703,6 +716,7 @@ body {
                 font-weight: 300;
                 font-size: 18px;
             }
+
         }
 
     }
@@ -710,27 +724,25 @@ body {
     .banner-tow {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-two.png) no-repeat center;
 
-        .deitels {
-            background: $secondery-color;
-        }
+
     }
 
     .banner-three {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-three.png) no-repeat center;
-        .deitels {
-            background: $secondery-color;
-        }
+
+
     }
 
     .banner-four {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-four.png) no-repeat center;
-        .deitels {
-            background: $secondery-color;
-        }
+
+
     }
-    .button{
+
+    .button {
         text-align: center;
-        a{
+
+        a {
             display: inline-block;
             font-family: $title-font;
             font-weight: 500;
@@ -739,7 +751,553 @@ body {
             color: $normal-color;
             background: $prymari-color;
             margin-top: 30px;
-            
+            transition: $transition;
+
+            &:hover {
+                background: $secondery-color;
+            }
+        }
+
+    }
+
+}
+
+
+/*==========7.company-part design=========*/
+#company-part {
+    margin-top: 100px;
+
+    .company-banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/company-banner.png);
+        padding: 160px 0;
+        text-align: center;
+
+        p {
+            font-weight: 400;
+            color: $normal-color;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 40px;
+            color: $normal-color;
+        }
+
+        ul {
+            li {
+                margin-top: 50px;
+                margin-left: 10px;
+                display: inline-block;
+
+                a {
+                    background: $secondery-color;
+                    padding: 18px 23px;
+                    text-transform: uppercase;
+                    color: $normal-color;
+                    font-family: $title-font;
+                    font-weight: 500;
+                    font-size: 16px;
+                    transition: $transition;
+
+                    &:hover {
+                        background: $prymari-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========8. client-part design=========*/
+
+#client-part {
+    margin-top: 100px;
+
+    .client-title {
+        margin-bottom: 50px;
+
+        h2 {
+            font-family: $title-font;
+            font-size: 36px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        p {
+            padding-right: 602px;
+        }
+
+    }
+
+    .item {
+        text-align: center;
+
+        .img {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 5px;
+                height: 84px;
+                background: $prymari-color;
+                content: "";
+            }
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: -7px;
+                width: 75px;
+                height: 7px;
+                background: $prymari-color;
+                content: "";
+            }
+        }
+
+        h3 {
+            font-family: $title-font;
+            font-family: 500;
+            font-size: 24px;
+            margin-top: 43px;
+            color: #000;
+        }
+
+        h6 {
+            margin-top: 9px;
+            color: $secondery-color;
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+
+        p {
+            margin-top: 25px;
+            padding: 0 45px;
+        }
+    }
+
+    .prev {
+        position: absolute;
+        right: 115px;
+        top: -100px;
+        padding: 7px 14px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $secondery-color;
+        z-index: 99;
+        font-size: 29px;
+        transition: $transition;
+
+        &:hover {
+            color: $prymari-color;
+        }
+    }
+
+    .next {
+        position: absolute;
+        right: 35px;
+        top: -100px;
+        padding: 7px 14px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $prymari-color;
+        z-index: 99;
+        font-size: 29px;
+    }
+
+}
+
+/*==========9. agent--part design=========*/
+#agent-part {
+    margin-top: 100px;
+    background: url(../images/agent-banner.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+
+    .title {
+        h2 {
+            color: $normal-color;
+        }
+
+        color: $normal-color;
+    }
+
+    .item {
+        .img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 235px;
+            border: 1px solid #263980;
+            background: transparent;
+            margin: 0 auto;
+            border-top: 0;
+            padding-left: 20px;
+
+            h3 {
+                font-family: $title-font;
+                font-weight: 500;
+                font-size: 20px;
+                padding-top: 20px;
+                color: $normal-color;
+            }
+
+            p {
+                font-size: 14px;
+                color: $normal-color;
+            }
+
+            .icon {
+                ul {
+                    li {
+                        display: inline-block;
+
+                        a {
+                            display: inline-block;
+
+                            i {
+                                font-size: 14px;
+                                color: $normal-color;
+                                margin-right: 15px;
+                                padding-bottom: 20px;
+                                transition: $transition;
+
+                                &:hover {
+                                    color: $prymari-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+/*==========10.blog-part design=========*/
+#blog-part {
+    margin-top: 100px;
+
+    .item {
+        margin: 0 15px;
+
+        .img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 320px;
+            margin: 0 auto;
+            background: $normal-color;
+            text-align: center;
+            transform: translateY(-40%);
+
+            p {
+                font-family: $body-font;
+                font-weight: 400;
+                color: $secondery-color;
+                font-size: 14px;
+                padding-top: 42px;
+            }
+
+            h4 {
+                font-family: $title-font;
+                font-weight: 500;
+                font-size: 20px;
+                padding-top: 20px;
+                padding-bottom: 25px;
+                color: #000;
+                padding: 20px 45px 25px;
+            }
+
+            a {
+                display: inline-block;
+
+                color: $prymari-color;
+                padding-bottom: 42px;
+
+            }
+        }
+    }
+
+    .slick-center .text {
+        border: 3px solid $prymari-color;
+    }
+
+    .prev {
+        position: absolute;
+        left: -70px;
+        top: 34%;
+        transform: translateY(-50%);
+        padding: 7px 14px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $secondery-color;
+        z-index: 99;
+        font-size: 29px;
+        transition: $transition;
+
+        &:hover {
+            color: $prymari-color;
+        }
+    }
+
+    .next {
+        position: absolute;
+        right: -70px;
+        top: 34%;
+        transform: translateY(-50%);
+        padding: 7px 14px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $prymari-color;
+        z-index: 99;
+        font-size: 29px;
+    }
+
+
+}
+
+
+/*==========11.footer-part design=========*/
+footer {
+    background: url(../images/footer-banner.png) no-repeat center;
+    background-size: cover;
+
+    .footer-top {
+        width: 60%;
+        margin: 0 auto;
+        background: transparent;
+        border-bottom-left-radius: 62px;
+        border-bottom-right-radius: 62px;
+        border: 1px solid #464b8c;
+        display: flex;
+
+        padding: 25px 0;
+
+        h3 {
+            margin-left: 50px;
+            font-family: $body-font;
+            font-size: 24px;
+            font-weight: 500;
+            color: $normal-color;
+            padding-top: 23px;
+        }
+
+        form {
+            display: inline-block;
+            position: relative;
+
+            .mail {
+
+                margin-left: 50px;
+
+                input {
+                    border: 1px solid #464b8c;
+                    background: transparent;
+                    padding: 24px 160px 24px 24px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+
+            }
+
+            .button {
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                button {
+                    border: 0;
+                    background: $prymari-color;
+                    padding: 25px 24px;
+                    color: $normal-color;
+                    font-family: $title-font;
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-transform: uppercase\;
+                }
+            }
+
+        }
+    }
+
+
+    .footer-main-aria {
+        padding-top: 100px;
+
+        h2 {
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: 20px;
+            color: $normal-color;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 7px;
+
+                a {
+                    color: $normal-color;
+                    transition: $transition;
+
+                    i {
+                        margin-right: 8px;
+                        color: $prymari-color;
+                    }
+
+                    &:hover {
+                        color: $prymari-color;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            p {
+                color: $normal-color;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                font-size: 15px;
+            }
+
+            h3 {
+                font-family: $title-font;
+                font-weight: 500;
+                font-size: 18px;
+                color: $normal-color;
+                background: $prymari-color;
+                padding-left: 27px;
+
+                padding: 15px 40px 15px 27px;
+                display: inline-block;
+                margin-bottom: 100px;
+                transition: $transition;
+
+                a {
+                    display: inline-block;
+                    color: $normal-color;
+                }
+
+                i {
+                    margin-right: 15px;
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+
+        .post {
+            .details {
+                display: flex;
+                margin-bottom: 30px;
+
+                .text {
+                    margin-left: 30px;
+                    color: $normal-color;
+
+                    p {
+                        font-size: 14px;
+
+                        padding-right: 70px;
+                        line-height: 24px;
+                    }
+
+                    h6 {
+                        font-family: $title-font;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-botom-aria {
+        border-top: 1px solid #073094;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            display: inline-block;
+            padding: 36px 0 40px 0;
+
+            span {
+                color: $prymari-color;
+            }
+        }
+
+        ul {
+            margin-top: 30px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    display: inline-block;
+
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        background: transparent;
+                        color: $normal-color;
+                        font-size: 14px;
+                        border-top: 1px solid #073094;
+                        text-align: center;
+                        line-height: 35px;
+                        margin-left: 15px;
+                        border-radius: 50%;
+                        transition: $transition;
+
+                        &:hover {
+                            background: $prymari-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*=============12.backtotop===============*/
+.backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+display: none;
+    a {
+        display: inline-block;
+
+        i {
+            padding: 24px 11px 21px 11px;
+            background: #e73100;
+            color: #fff;
+            font-size: 20px;
         }
     }
 
