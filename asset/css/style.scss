@@ -15,6 +15,8 @@ Version
 2.header aria design
 3.banner-part
 4.about-part
+5.Properties-part
+6.citys-part
 */
 /*==========1 boday basic pramiter=========*/
 $body-font: 'Roboto',
@@ -466,6 +468,7 @@ body {
 
 
 /*==========4.about-part pramiter=========*/
+
 #about-part {
     margin-top: 100px;
 
@@ -480,6 +483,7 @@ body {
 
     .details {
         padding-left: 20px;
+
         &-title {
             font-family: $title-font;
             font-weight: 500;
@@ -487,21 +491,256 @@ body {
             color: #000;
             line-height: 34px;
         }
-        p{
+
+        p {
             margin: 35px 0;
             line-height: 24px;
             width: 470px;
         }
-      .btn{
-          margin-left: -12px;
-          a{
-              padding: 18px 34px;
-              background: $prymari-color;
-              font-family: $title-font;
-              font-weight: 500;
-              color: $normal-color;
-              text-transform: uppercase;
-          }
-      }
+
+        .btn {
+            margin-left: -12px;
+
+            a {
+                padding: 18px 34px;
+                background: $prymari-color;
+                font-family: $title-font;
+                font-weight: 500;
+                color: $normal-color;
+                text-transform: uppercase;
+            }
+        }
     }
+}
+
+/*==========5.Properties-part =========*/
+#Properties-part {
+    background: #e5edff;
+    margin-top: 100px;
+
+    padding-bottom: 100px;
+
+
+    .properties-title {
+        background: $normal-color;
+
+        width: 70%;
+        margin-left: auto;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 110px;
+        border-bottom-left-radius: 128px;
+
+        p {
+            padding: 0 212px;
+        }
+
+    }
+
+    .properties-slider {
+        margin-top: -70px;
+    }
+
+    .item {
+
+
+        margin: 0 15px;
+
+        .img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            background: $normal-color;
+            padding: 20px 20px 0 20px;
+
+            .details {
+
+                li {
+                    display: inline-block;
+                    font-size: 14px;
+
+                    i {
+                        margin-right: 5px;
+                        color: $prymari-color;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+
+        h3 {
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: 20px;
+            color: #000;
+            margin: 24px 0;
+
+        }
+
+        p {
+
+            line-height: 26px;
+            margin-bottom: 45px;
+
+            width: 308px;
+            font-size: 14px;
+        }
+
+        .button {
+            background: $prymari-color;
+            text-align: left;
+
+            .line {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    right: -18px;
+                    top: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: #e11200;
+                    content: "";
+                }
+            }
+
+
+            li {
+                display: inline-block;
+                margin-left: 30px;
+
+                a {
+                    display: inline-block;
+                    line-height: 50px;
+                    font-family: $title-font;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $normal-color;
+                }
+            }
+        }
+
+    }
+
+
+
+    .prev {
+        position: absolute;
+        right: 115px;
+        top: -66px;
+        padding: 10px 16px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $secondery-color;
+        z-index: 99;
+        font-size: 29px;
+        transition: $transition;
+
+        &:hover {
+            color: $prymari-color;
+        }
+    }
+
+    .next {
+        position: absolute;
+        right: 35px;
+        top: -66px;
+        padding: 10px 16px;
+        border: 3px dotted #c2cadd;
+        background: transparent;
+        color: $prymari-color;
+        z-index: 99;
+        font-size: 29px;
+    }
+}
+
+/*==========6.citys-part =========*/
+#citys-part {
+    margin-top: 100px;
+
+    .city-title {
+        text-align: center;
+        margin-bottom: 50px;
+        h2{
+            font-family: $title-font;
+            font-size: 36px;
+            font-weight: 700;
+            color: #000;
+        }
+        p{
+            margin-top: 20px;
+            padding: 0 420px;
+        }
+    }
+
+    .item-banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner.png) no-repeat center;
+        background-size: cover;
+        padding: 166px 0;
+        margin-bottom: 23px;
+        text-align: center;
+
+        .deitels {
+            background: $prymari-color;
+            display: inline-block;
+            width: 250px;
+            height: 120px;
+            color: $normal-color;
+
+            h1 {
+                font-family: $title-font;
+                font-weight: 500;
+                font-size: 30px;
+                padding-top: 28px;
+            }
+
+            p {
+                font-family: $title-font;
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    .banner-tow {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-two.png) no-repeat center;
+
+        .deitels {
+            background: $secondery-color;
+        }
+    }
+
+    .banner-three {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-three.png) no-repeat center;
+        .deitels {
+            background: $secondery-color;
+        }
+    }
+
+    .banner-four {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-four.png) no-repeat center;
+        .deitels {
+            background: $secondery-color;
+        }
+    }
+    .button{
+        text-align: center;
+        a{
+            display: inline-block;
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 17px 35px;
+            color: $normal-color;
+            background: $prymari-color;
+            margin-top: 30px;
+            
+        }
+    }
+
 }

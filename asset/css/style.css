@@ -15,6 +15,8 @@ Version
 2.header aria design
 3.banner-part
 4.about-part
+5.Properties-part
+6.citys-part
 */
 /*==========1 boday basic pramiter=========*/
 * {
@@ -383,4 +385,187 @@ body {
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
+}
+
+/*==========5.Properties-part =========*/
+#Properties-part {
+  background: #e5edff;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+#Properties-part .properties-title {
+  background: #fff;
+  width: 70%;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  border-bottom-left-radius: 128px;
+}
+#Properties-part .properties-title p {
+  padding: 0 212px;
+}
+#Properties-part .properties-slider {
+  margin-top: -70px;
+}
+#Properties-part .item {
+  margin: 0 15px;
+}
+#Properties-part .item .img img {
+  width: 100%;
+}
+#Properties-part .item .text {
+  background: #fff;
+  padding: 20px 20px 0 20px;
+}
+#Properties-part .item .text .details li {
+  display: inline-block;
+  font-size: 14px;
+}
+#Properties-part .item .text .details li i {
+  margin-right: 5px;
+  color: #ec3323;
+  font-size: 15px;
+}
+#Properties-part .item h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin: 24px 0;
+}
+#Properties-part .item p {
+  line-height: 26px;
+  margin-bottom: 45px;
+  width: 308px;
+  font-size: 14px;
+}
+#Properties-part .item .button {
+  background: #ec3323;
+  text-align: left;
+}
+#Properties-part .item .button .line {
+  position: relative;
+}
+#Properties-part .item .button .line::after {
+  position: absolute;
+  right: -18px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e11200;
+  content: "";
+}
+#Properties-part .item .button li {
+  display: inline-block;
+  margin-left: 30px;
+}
+#Properties-part .item .button li a {
+  display: inline-block;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+#Properties-part .prev {
+  position: absolute;
+  right: 115px;
+  top: -66px;
+  padding: 10px 16px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #002172;
+  z-index: 99;
+  font-size: 29px;
+  transition: all linear 0.3s;
+}
+#Properties-part .prev:hover {
+  color: #ec3323;
+}
+#Properties-part .next {
+  position: absolute;
+  right: 35px;
+  top: -66px;
+  padding: 10px 16px;
+  border: 3px dotted #c2cadd;
+  background: transparent;
+  color: #ec3323;
+  z-index: 99;
+  font-size: 29px;
+}
+
+/*==========6.citys-part =========*/
+#citys-part {
+  margin-top: 100px;
+}
+#citys-part .city-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#citys-part .city-title h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+#citys-part .city-title p {
+  margin-top: 20px;
+  padding: 0 420px;
+}
+#citys-part .item-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner.png) no-repeat center;
+  background-size: cover;
+  padding: 166px 0;
+  margin-bottom: 23px;
+  text-align: center;
+}
+#citys-part .item-banner .deitels {
+  background: #ec3323;
+  display: inline-block;
+  width: 250px;
+  height: 120px;
+  color: #fff;
+}
+#citys-part .item-banner .deitels h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  padding-top: 28px;
+}
+#citys-part .item-banner .deitels p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+#citys-part .banner-tow {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-two.png) no-repeat center;
+}
+#citys-part .banner-tow .deitels {
+  background: #002172;
+}
+#citys-part .banner-three {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-three.png) no-repeat center;
+}
+#citys-part .banner-three .deitels {
+  background: #002172;
+}
+#citys-part .banner-four {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/citys-banner-four.png) no-repeat center;
+}
+#citys-part .banner-four .deitels {
+  background: #002172;
+}
+#citys-part .button {
+  text-align: center;
+}
+#citys-part .button a {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 17px 35px;
+  color: #fff;
+  background: #ec3323;
+  margin-top: 30px;
 }
